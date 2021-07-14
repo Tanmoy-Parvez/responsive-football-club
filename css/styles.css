@@ -273,7 +273,7 @@ header:hover .top-banner img{
 @media only screen and (max-width:688px){
 /* ----> header styles <---- */
     header{
-        width: 100.3%;
+        width: 100%;
         height: 695px;
         flex-direction: column;
     }
