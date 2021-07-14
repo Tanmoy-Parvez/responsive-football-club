@@ -1,6 +1,5 @@
 
     /* google fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
     /* common styles */
@@ -10,6 +9,14 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
 }
 
 /* =====================
@@ -27,11 +34,13 @@ header{
 
 .header-title h1{
     font-size: 64px;
-    line-height: 50px;
+    line-height: 80px;
     color: #FFFFFF;
+    margin: 0;
 }
 
 .header-title a{
+    display: inline-block;
     text-decoration: none;
  }
 
@@ -40,6 +49,7 @@ header{
     background-color: #E02C6D;
     color: #FFFFFF;
     Padding: 10px 24px 10px 24px;
+    margin-top: 27px;
 }
 
 .btn i{
@@ -65,14 +75,6 @@ header:hover .top-banner img{
 /* =====================
      players styles 
 =====================*/
-
-.container{
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-}
 
 .players{
     display: grid;
@@ -121,16 +123,12 @@ header:hover .top-banner img{
     padding: 30px;
     height: 280px;
     border-radius: 10px;
-    box-shadow:  0px 0px 50px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.10);
 }
 
 .trophy-info {
     line-height: 10px;
     margin-right: 100px;
-}
-
-.trophy-info h1{
-    font-size: 50px;
 }
 
 .trophy-info h2{
@@ -142,9 +140,9 @@ header:hover .top-banner img{
 }
 
 .trophy-info p{
-    line-height: 20px;
+    line-height: 25px;
     text-align: justify;
-    color: gray;
+    color:gray;
     margin-bottom: 40px;
 }
 
@@ -154,6 +152,12 @@ header:hover .top-banner img{
     background-color: #E02C6D;
     color: #FFFFFF;
     Padding: 10px 24px 10px 24px;
+}
+
+ .trophy-btn:hover{
+    background-color: #fff;
+    color: #E02C6D;
+    border: 2px solid #E02C6D;
 }
 
 .trophies{
@@ -188,7 +192,7 @@ header:hover .top-banner img{
     height: auto;
     width: 85%;
     border-radius: 10px;
-    box-shadow:  0px 0px 50px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.10);
     margin: auto;
     margin-top: 40px;
     text-align: center;
@@ -215,7 +219,6 @@ header:hover .top-banner img{
     width: 100%;
     height: 100%;
 }
-
 
 /* =====================
      footer styles 
@@ -268,8 +271,9 @@ header:hover .top-banner img{
 
 /* ========== mobile device =========== */
 @media only screen and (max-width:688px){
+/* ----> header styles <---- */
     header{
-        width: 100.5%;
+        width: 100.3%;
         height: 695px;
         flex-direction: column;
     }
@@ -284,11 +288,14 @@ header:hover .top-banner img{
         width: 329px;
         height: 259px;
     }
+    
+/* ----> players styles <---- */
     .players{
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 0;
     }
 
+/* ----> trophies styles <---- */
     .trophy-area{
         grid-template-columns: repeat(1, 1fr);
         height: auto;
@@ -320,6 +327,7 @@ header:hover .top-banner img{
         height: 200px;
     }
 
+/* ----> partners styles <---- */
     .partner-area{
         width: 75%;
     }
@@ -332,7 +340,8 @@ header:hover .top-banner img{
         width: 90%;
         height: 90%;
     }
-    
+
+/* ----> footer styles <---- */
     .footer-logo{
         width: 50%;
         height: 65px;
@@ -342,13 +351,14 @@ header:hover .top-banner img{
 
 /* ========== tablet devices =========== */
 @media only screen and (min-width:689px) and (max-width:992px){
+/* ----> header styles <---- */
     header{
         height: 450px;
     }
 
     .header-title h1{
         font-size: 40px;
-        line-height: 30px;
+        line-height: 55px;
     }
     
     .top-banner img{
@@ -356,10 +366,12 @@ header:hover .top-banner img{
         height: 330px;
     }
 
+/* ----> players styles <---- */
     .players{
         grid-template-columns: repeat(2, 1fr);
     }
 
+/* ----> trophies styles <---- */
     .trophy-area{
         grid-template-columns: repeat(1, 1fr);
         height: 520px;
@@ -369,3 +381,7 @@ header:hover .top-banner img{
         margin-top: 20px;
     }
 }
+
+/* ================
+        End
+=================  */
