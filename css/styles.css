@@ -12,7 +12,9 @@ body{
     background-color: #fff;
 }
 
-/* header styles */
+/* =====================
+     header styles 
+=====================*/
 
 header{
     width: 100%;
@@ -60,7 +62,9 @@ header:hover .top-banner img{
     transition: transform 2s ease-in-out;
 }
 
-/* players card styles */
+/* =====================
+     players styles 
+=====================*/
 
 .container{
     width: 90%;
@@ -108,7 +112,9 @@ header:hover .top-banner img{
     font-weight: 400px;
 }
 
-/* trophies styles */
+/* =====================
+     trophies styles 
+=====================*/
 .trophy-area{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -150,17 +156,15 @@ header:hover .top-banner img{
     Padding: 10px 24px 10px 24px;
 }
 
-
 .trophies{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .trophy{
-    width: 230px;
-    height: 400px;
     padding: 15px;
     text-align: center;
+   
 }
 
 .trophy-image{
@@ -174,11 +178,12 @@ header:hover .top-banner img{
 }
 
 .trophy-details p{
-    line-height: 15px;
     color: rgb(83, 79, 79);
 }
 
-/* footer styles */
+/* =====================
+     footer styles 
+=====================*/
 
 .footer-section{
     width: 100%;
@@ -212,24 +217,22 @@ header:hover .top-banner img{
 }
 
 .social-icons a:hover{
-    /* color:rgba(46, 46, 134, 0.829); */
     color: rgb(95, 94, 94);
-    font-size: 45px;
+    font-size: 42px;
 }
 
 .social-icons p{
     font-size: 18px;
 }
 
-/*----------------
-------------------
-    media query
------------------
------------------*/
+
+
+/* =====================================
+    Media Query Or Responsive styles
+ ===================================== */
 
 /* ========== mobile device =========== */
 @media only screen and (max-width:688px){
-    
     header{
         width: 100.5%;
         height: 695px;
@@ -248,6 +251,37 @@ header:hover .top-banner img{
     }
     .players{
         grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 0;
+    }
+
+    .trophy-area{
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+    }
+
+    .trophy-info{
+        padding: 0px 10px;
+        text-align: center;
+    }
+
+    .trophy-info h2{
+        font-size: 1.5em;
+    }
+
+    .trophy-info h1{
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    .trophies{
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .trophy{
+        width: 150px;
+        height: 200px;
     }
 
     .footer-logo{
@@ -259,7 +293,6 @@ header:hover .top-banner img{
 
 /* ========== tablet devices =========== */
 @media only screen and (min-width:689px) and (max-width:992px){
-    
     header{
         height: 450px;
     }
@@ -276,5 +309,14 @@ header:hover .top-banner img{
 
     .players{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trophy-area{
+        grid-template-columns: repeat(1, 1fr);
+        height: 520px;
+    }
+
+    .trophies{
+        margin-top: 20px;
     }
 }
