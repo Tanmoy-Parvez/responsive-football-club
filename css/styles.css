@@ -153,13 +153,13 @@ header:hover .top-banner img{
     font-size: 18px;
 }
 
-/* ----------------
+/*----------------
 ------------------
     media query
 -----------------
------------------ */
+-----------------*/
 
-/* mobile device */
+/* ========== mobile device =========== */
 @media only screen and (max-width:688px){
     
     header{
@@ -186,5 +186,27 @@ header:hover .top-banner img{
         width: 50%;
         height: 65px;
         margin: auto;
+    }
+}
+
+/* ========== tablet devices =========== */
+@media only screen and (min-width:689px) and (max-width:992px){
+    
+    header{
+        height: 450px;
+    }
+
+    .header-title h1{
+        font-size: 40px;
+        line-height: 30px;
+    }
+    
+    .top-banner img{
+        width: 400px;
+        height: 330px;
+    }
+
+    .players{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
